@@ -42,10 +42,26 @@ h2{
     text-align: center;
     
 }
-
+.titulo{
+    grid-area: titulo;
+}
+.servicios1 {
+    grid-area: servicios1;
+}
+.servicios2 {
+    grid-area: servicios2;
+}
+.servicos3 {
+    grid-area: servicios3;
+}
 .grid-container{
     display: grid;
     gap: 10px;
+    grid-template-areas: 
+    "titulo"
+    "servicios1"
+    "servicios2"
+    "servicios3";
 }
 .serviciosimg{
     width: 100%;
