@@ -40,6 +40,7 @@ h2{
     border-radius: 4px;
     padding: 10px;
     text-align: center;
+    width: 100%;
     
 }
 .titulo{
@@ -51,22 +52,46 @@ h2{
 .servicios2 {
     grid-area: servicios2;
 }
-.servicos3 {
+.servicios3 {
     grid-area: servicios3;
 }
 .grid-container{
     display: grid;
     gap: 10px;
     grid-template-areas: 
-    "titulo"
-    "servicios1"
-    "servicios2"
-    "servicios3";
+        "titulo"
+        "servicios1"
+        "servicios2"
+        "servicios3";
 }
-.serviciosimg{
-    width: 100%;
 
+.titulo {
+    grid-area: titulo;
 }
+
+.facebook {
+    grid-area: facebook;
+}
+
+.instagram{
+    grid-area: instagram;
+}
+
+.twitter {
+    grid-area: twitter;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "titulo"
+        "facebook"
+        "instagram"
+        "twitter";
+        
+}
+
 
 @media (max-with: 768px){
     #intro{
