@@ -25,46 +25,26 @@ a{
 
 .carousel-inner{
     max-height: 25rem;
+    width: 100%;
 }
 h2{
     font-family: Arial, Helvetica, sans-serif;
-    padding: 20px;
+    padding: 10px;
 }
 .parrafoservicios{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
-    padding: 15px;
+    padding: 10px;
+}
+.bodyserv{
+    min-height: 100%;
 }
 .grid-container > * {
     box-shadow: -1px 1px 7px 0px black;
     border-radius: 4px;
     padding: 10px;
     text-align: center;
-    width: 100%;
-    
 }
-.titulo{
-    grid-area: titulo;
-}
-.servicios1 {
-    grid-area: servicios1;
-}
-.servicios2 {
-    grid-area: servicios2;
-}
-.servicios3 {
-    grid-area: servicios3;
-}
-.grid-container{
-    display: grid;
-    gap: 10px;
-    grid-template-areas: 
-        "titulo"
-        "servicios1"
-        "servicios2"
-        "servicios3";
-}
-
 .titulo {
     grid-area: titulo;
 }
@@ -88,17 +68,24 @@ h2{
         "titulo"
         "facebook"
         "instagram"
-        "twitter";
+        "twitter";       
         
 }
 
 
-@media (max-with: 768px){
+@media (max-with: 600px){
     #intro{
         width: 90% !important;
     }
-    .servico-fila{
+    .servicio-fila{
         width: 100%!important;
         text-align: center;
     }
 }
+
+@media (min-width: 900px){
+    .grid-container{
+        grid-template-rows: 100px 350px 350px 350px;
+        }
+    }
+    
