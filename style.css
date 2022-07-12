@@ -1,6 +1,6 @@
 
 .nav-link:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 .galeria .col-lg-4{
     margin: 0 !important;
@@ -25,6 +25,31 @@ a{
 
 .carousel-inner{
     max-height: 25rem;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+.parrafoservicios{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    padding: 15px;
+}
+.grid-container > * {
+    box-shadow: -1px 1px 7px 0px black;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+}
+.serviciosimg{
+    width: 100%;
+
 }
 
 @media (max-with: 768px){
